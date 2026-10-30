@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Precarga de la segunda imagen del carrusel para evitar parpadeos -->
+  <link rel="preload" href="img/carrusel/1.webp" as="image">
+  <link rel="icon" type="image/png" href="img/logo/Laclihe.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LACLIHE - Laboratorio Clínico especializado en servicios médicos y diagnósticos de precisión.">
+  <title>Inicio | LACLIHE</title>
+  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+ <!-- Topbar Informativa -->
+  <div class="topbar py-2 bg-danger text-white d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="topbar-info d-flex gap-4 fs-7 fw-light">
+        <span><i class="fas fa-clock me-1 opacity-75"></i> Atendiendo de Lunes a Sábado</span>
+        <span><i class="fas fa-envelope me-1 opacity-75"></i> agenda@laclihe.com</span>
+      </div>
+      <div class="topbar-social d-flex gap-3">
+        <a href="https://facebook.com" target="_blank" class="text-white opacity-75 opacity-100-hover"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-white opacity-75 opacity-100-hover"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" class="text-white opacity-75 opacity-100-hover"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="sticky-top bg-white border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-lg py-2">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-extrabold text-danger fs-4 m-0" href="index.html">
+          <div class="brand-icon-box bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fas fa-heartbeat fs-5"></i>
+          </div>
+          <span>LACLIHE</span>
+        </a>
+        <button class="navbar-toggler border-0 p-1 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+          <div class="offcanvas-header bg-danger text-white">
+            <h5 class="offcanvas-title fw-bold">LACLIHE</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-lg-end gap-3 p-4 p-lg-0">
+            <ul class="navbar-nav gap-lg-1 gap-xl-3 fw-medium m-0">
+              <li class="nav-item"><a class="nav-link py-2 px-3 rounded" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link py-2 px-3 rounded" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link py-2 px-3 rounded" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link py-2 px-3 rounded" href="sucursales.html">Sucursales</a></li>
+              <li class="nav-item"><a class="nav-link py-2 px-3 rounded active" href="contacto.html">Contacto</a></li>
+            </ul>
+            <a href="https://wa.me/+50587343396" target="_blank" class="btn btn-danger btn-sm rounded-pill px-3 py-2 fw-semibold shadow-sm">
+              <i class="fab fa-whatsapp me-1"></i> Agendar Cita
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="bg-light py-5 border-bottom">
+    <div class="container text-center">
+      <span class="text-danger fw-bold text-uppercase tracking-wider fs-7">Atención Directa</span>
+      <h1 class="display-5 fw-extrabold mt-1">Contacto</h1>
+      <p class="text-muted fw-light max-w-700 mx-auto">Estamos listos para responder a tus consultas o agendar tu examen médico.</p>
+    </div>
+  </div>
+
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Formulario -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 p-4">
+            <h3 class="h5 fw-bold mb-4">Envíanos un mensaje</h3>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fs-7 fw-semibold">Nombre Completo</label>
+                  <input type="text" class="form-control rounded-3" placeholder="Ej. Ana García" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fs-7 fw-semibold">Teléfono / WhatsApp</label>
+                  <input type="tel" class="form-control rounded-3" placeholder="+505 8000 0000" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fs-7 fw-semibold">Correo Electrónico</label>
+                  <input type="email" class="form-control rounded-3" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label fs-7 fw-semibold">Mensaje o Consulta</label>
+                  <textarea class="form-control rounded-3" rows="4" placeholder="Escribe aquí tu consulta o el examen que deseas cotizar..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-danger rounded-pill px-4 py-2 fw-semibold">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Vías Rápidas -->
+        <div class="col-lg-5">
+          <div class="bg-light rounded-4 p-4 mb-4">
+            <h4 class="h6 fw-bold mb-3">Atención Inmediata por WhatsApp</h4>
+            <p class="text-muted fs-7 fw-light">¿Necesitas agendar rápidamente o pedir un presupuesto?</p>
+            <a href="https://wa.me/+50587343396" target="_blank" class="btn btn-success rounded-pill w-100 fw-semibold">
+              <i class="fab fa-whatsapp me-2"></i> Chatear por WhatsApp
+            </a>
+          </div>
+
+          <div class="p-2">
+            <h5 class="fw-bold fs-6 mb-3">Teléfonos de Atención</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2 text-muted fs-7 fw-light">
+              <li><i class="fas fa-phone text-danger me-2"></i><strong>Línea Fija:</strong> +505 2722 5386</li>
+              <li><i class="fab fa-whatsapp text-success me-2"></i><strong>WhatsApp:</strong> +505 8734 3396</li>
+              <li><i class="fas fa-envelope text-danger me-2"></i><strong>Correo:</strong> agenda@laclihe.com</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+ <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container pt-3">
+      <div class="row gy-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-extrabold text-white fs-3 mb-3" href="index.html">
+            <div class="brand-icon-box bg-danger text-white rounded-circle p-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-heartbeat fs-4"></i>
+            </div>
+            <span>LACLIHE</span>
+          </a>
+          <p class="text-secondary fs-7 pe-lg-4 fw-light">Laboratorio Clínico y Centro de Salud comprometido con ofrecer diagnósticos precisos en Somoto.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Navegación</h5>
+          <ul class="list-unstyled text-secondary fs-7 d-flex flex-column gap-2 mb-0 fw-light">
+            <li><a href="nosotros.html" class="text-secondary text-decoration-none">Nosotros</a></li>
+            <li><a href="servicios.html" class="text-secondary text-decoration-none">Servicios</a></li>
+            <li><a href="sucursales.html" class="text-secondary text-decoration-none">Sucursales</a></li>
+            <li><a href="contacto.html" class="text-secondary text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Contacto Directo</h5>
+          <ul class="list-unstyled text-secondary fs-7 d-flex flex-column gap-2 fw-light">
+            <li><i class="fab fa-whatsapp text-success fs-5 me-2"></i><a href="https://wa.me/+50587343396" class="text-secondary text-decoration-none">+505 8734 3396</a></li>
+            <li><i class="fa fa-phone text-danger fs-6 me-2"></i><a href="tel:+50527225386" class="text-secondary text-decoration-none">+505 2722 5386</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3 text-white">Sucursales</h5>
+          <div class="d-flex flex-column gap-2 fs-7 text-secondary fw-light">
+            <span><i class="fas fa-map-marker-alt text-danger me-2"></i><strong>Sede 1:</strong> Claro 1C al este, ½c al sur, Somoto.</span>
+            <span><i class="fas fa-map-marker-alt text-danger me-2"></i><strong>Sede 2:</strong> Mercado Municipal, frente a Agricampo.</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-secondary border-opacity-25 pt-4 mt-4 text-center text-secondary fs-7 fw-light">
+        <p class="mb-0">© 2026 LACLIHE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
